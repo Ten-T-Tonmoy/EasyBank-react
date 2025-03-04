@@ -8,7 +8,7 @@ const Articles = () => {
   return (
     <div className="bg-gray-200">
       <h1 className="text-[3rem] py-3 text-center">Latest Articles</h1>
-      <div className="grid gap-4 grid-cols-1 p-5  md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 grid-cols-1 p-7  md:grid-cols-2 lg:grid-cols-4">
         <div
           className="cursor-pointer hover:scale-105 
         transition-all duration-200 ease-in-out rounded-lg overflow-hidden bg-white"

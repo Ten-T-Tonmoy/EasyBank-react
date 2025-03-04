@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
 import phones from "../images/phones.png";
 import bgdsk from "../images/bgdsk.svg";
 import bgphn from "../images/bgphn.svg";
@@ -23,9 +22,8 @@ const Home = () => {
   }, []);
   return (
     <>
-      <Navbar />
       <div className="flex overflow-x-clip overflow-y-visible md:flex-row bg-gray-100  min-h-[100vh] mt-16 md:mt-10 flex-col">
-        <div className="flex-1 h-100vh md:-top-12 relative flex flex-col justify-center  px-10 ">
+        <div className="flex-1 my-20 h-100vh md:-top-12 relative flex flex-col justify-center  px-10 ">
           <h1
             className="inline-block
          font-[400] text-[2rem] md:text-[2.3rem] "
@@ -40,7 +38,7 @@ const Home = () => {
           </h1>
           <p
             className="font-[400]
-          max-w-[450px]
+          max-w-[450px] my-5
           text-[1.01rem] text-neutral-grayishBlue"
           >
             Take your financial life online. Your Easybank account will be a
@@ -48,8 +46,8 @@ const Home = () => {
             more.
           </p>
           <button
-            className=" bg-gradient-to-r from-primary-limeGreen to-primary-brightCyan
-          relative w-[200px] py-2 text-neutral-white rounded-full my-4
+            className="  bg-gradient-to-r from-primary-limeGreen to-primary-brightCyan
+          relative w-[200px] py-2 text-neutral-white rounded-full my-8
           hover:opacity-70 "
           >
             Request Invite

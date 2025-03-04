@@ -13,10 +13,6 @@
     "vite": "^4.x.x"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.4.6",
-    "@mui/material": "^6.4.6",
     "react": "^18.x.x",
     "react-dom": "^18.x.x"
   }
