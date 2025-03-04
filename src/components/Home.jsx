@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="flex overflow-hidden md:flex-row bg-gray-100  min-h-[100vh] mt-16 md:mt-10 flex-col">
+      <div className="flex overflow-x-clip overflow-y-visible md:flex-row bg-gray-100  min-h-[100vh] mt-16 md:mt-10 flex-col">
         <div className="flex-1 h-100vh md:-top-12 relative flex flex-col justify-center  px-10 ">
           <h1
             className="inline-block
@@ -56,21 +56,21 @@ const Home = () => {
           </button>
         </div>
         <div
-          className="flex-1  md:min-w-[50vw] flex justify-center items-center "
+          className="flex-1 mb-20 md:mb-14  md:min-w-[50vw]  flex justify-center items-center "
           style={{
-            backgroundImage: `url(${small ? bgdsk : bgphn})`,
+            backgroundImage: `url(${small ? bgphn : bgdsk})`,
             backgroundSize: `${small ? "cover" : "900px"}`,
             backgroundRepeat: "no-repeat",
-            backgroundPositionX: `${small ? "0" : "-20%"}`,
-            backgroundPositionY: `${small ? "0" : "-35%"}`,
+            backgroundPositionX: `${small ? "0px" : "-20%"}`,
+            backgroundPositionY: `${small ? "0px" : "-35%"}`,
           }}
         >
           <img
             src={phones}
             alt=""
-            className={` w-[700px] relative
-            ${small ? "-top[15%] " : "-top-[15%]"} 
-           ${small ? " -right-[0]" : "-right-[15%]"}`}
+            className={` md:w-[700px] h-[100%] relative
+            ${small ? "-translate-x-[0px] " : "-translate-x-[40px]"} 
+           ${small ? "-translate-y-[-100px]" : "translate-y-[50px]"}`}
           />
         </div>
       </div>

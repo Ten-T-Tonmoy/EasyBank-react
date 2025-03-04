@@ -33,7 +33,7 @@ const Navbar = () => {
 
         <button
           className="mr-20 bg-gradient-to-r from-primary-limeGreen to-primary-brightCyan
-          hidden md:block w-[200px] py-2 text-neutral-white rounded-full my-4
+          hidden lg:block w-[200px] py-2 text-neutral-white rounded-full my-4
           hover:opacity-70"
         >
           Request Invite
@@ -56,13 +56,17 @@ const Navbar = () => {
           <img
             src={close}
             className="mx-auto mt-4 bg-gradient-to-r from-primary-limeGreen
-             to-primary-brightCyan p-3 rounded-full scale-110"
+             to-primary-brightCyan p-3 rounded-full scale-110 cursor-pointer"
             onClick={() => setOpen(!open)}
-            alt=""
+            alt="Close Menu"
           />
           <div
-            className="absolute top-20 left-1/2 transform -translate-x-1/2 w-3/4
-            bg-white rounded-lg shadow-lg p-6 flex flex-col items-center gap-4"
+            className={`absolute top-20 left-1/2 transform transition-all
+              duration-300 ease-in-out ${
+                open
+                  ? "translate-y-0 opacity-100"
+                  : "-translate-y-full opacity-0"
+              } -translate-x-1/2 w-3/4 bg-white rounded-lg shadow-lg p-6 flex flex-col items-center gap-4`}
           >
             {["Home", "About", "Contact", "Blog", "Careers"].map((item) => (
               <button
