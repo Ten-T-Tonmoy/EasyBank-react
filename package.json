@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^3.7.2",
+    "autoprefixer": "^10.x.x",
+    "postcss": "^8.x.x",
+    "tailwindcss": "^3.x.x",
+    "vite": "^4.x.x"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.6",
+    "@mui/material": "^6.4.6",
+    "react": "^18.x.x",
+    "react-dom": "^18.x.x"
+  }
+}
