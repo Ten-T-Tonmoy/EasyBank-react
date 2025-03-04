@@ -14,6 +14,7 @@ const Home = () => {
         setSmall(false);
       }
     };
+    handleSize();
     window.addEventListener("resize", handleSize);
 
     return () => {
@@ -23,7 +24,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="flex overflow-hidden md:flex-row bg-gray-100  min-h-[100vh] mt-10 flex-col">
+      <div className="flex overflow-hidden md:flex-row bg-gray-100  min-h-[100vh] mt-16 md:mt-10 flex-col">
         <div className="flex-1 h-100vh md:-top-12 relative flex flex-col justify-center  px-10 ">
           <h1
             className="inline-block
