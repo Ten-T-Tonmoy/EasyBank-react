@@ -5,6 +5,7 @@ import twitter from "../images/icon-twitter.svg";
 import instagram from "../images/icon-instagram.svg";
 import pinterest from "../images/icon-pinterest.svg";
 import youtube from "../images/icon-youtube.svg";
+import { FaHeart } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -105,7 +106,9 @@ const Footer = () => {
           Request Invite
         </button>
         <p className="text-neutral-grayishBlue whitespace-nowrap">
-          ©Easybank. All Rights Reserved
+          ©Easybank. All Rights Reserved . <br /> Coded by{" "}
+          <p className="inline text-primary-limeGreen"> Fh Tonmoy</p>{" "}
+          <FaHeart className="inline mb-1 text-primary-brightCyan " />
         </p>
       </div>
     </div>
